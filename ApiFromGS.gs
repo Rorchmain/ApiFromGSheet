@@ -24,21 +24,7 @@ function ProperDateFormat(StringDate){
   return mydate;
 };  
   
-function buildDic(posts, headings){
-  var MyDic={};
-  var MyMainDic={};
-  for (j=0;j<posts.length;j++){
-    for (i=1;i<headings.length;i++){
-      MyDic[headings[i]]=posts[j][i]
-    };
-    MyMainDic[posts[j][0]]=MyDic
-    MyDic={};
-  };
-  return MyMainDic;
-};
-
 function buildDic2(posts, headings){
-  
   var MyDic={};
   var MyMainDic={};
   var MyDicValo={};
